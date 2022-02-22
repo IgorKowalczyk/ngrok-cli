@@ -8,15 +8,15 @@
  console.log(chalk.cyan(chalk.bold("[NGROK] > Connected to ngrok tunnel...")));
  // TODO: Ask user for ngrok port, addr and region [5s timeout]
  const url = await ngrok.connect({
-  proto: config.defaults.protocol, 
+  proto: config.defaults.protocol,
   addr: config.defaults.port,
   authtoken: config.token,
   region: config.defaults.region,
   onStatusChange: (status) => {
-    console.info(chalk.bold(chalk.cyan(`[NGROK] > Status: `) + (status == "online" ? chalk.red(status) : chalk.green(status))));
-   },
-});
-console.log(chalk.cyan(chalk.bold(`[NGROK] > URL: ${url}`)));
+   console.info(chalk.bold(chalk.cyan(`[NGROK] > Status: `) + (status == "online" ? chalk.red(status) : chalk.green(status))));
+  },
+ });
+ console.log(chalk.cyan(chalk.bold(`[NGROK] > URL: ${url}`)));
  if (config.defaults.protocol == "tcp" && config.ssh.enabled == true && config.ssh.user) {
   const port = url.split(":")[2];
   const protocol = url.split(":")[0];

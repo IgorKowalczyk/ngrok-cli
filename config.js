@@ -1,13 +1,14 @@
 module.exports = {
  token: process.env.NGROK_TOKEN,
  defaults: {
-  protocol: 'tcp',
-  region: 'eu',
-  port: '22'
+  protocol: "tcp",
+  region: "eu",
+  port: "22",
  },
- ssh: { // Enable auto-generated ssh command
-   enabled: true,
-   user: "igorkowalczyk"
+ ssh: {
+  // Enable auto-generated ssh command
+  enabled: true,
+  user: "igorkowalczyk",
  },
- all_protocols: ['tcp', 'http', 'tls']
-}
+ all_protocols: ["tcp", "http", "tls"],
+};
