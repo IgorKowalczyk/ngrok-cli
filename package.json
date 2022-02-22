@@ -1,0 +1,32 @@
+{
+  "name": "ngrok-pm2",
+  "version": "1.0.1",
+  "description": "Package that allows creating remote connections using ngrok",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IgorKowalczyk/ngrok-pm2.git"
+  },
+  "keywords": [
+    "ngrok",
+    "pm2",
+    "web"
+  ],
+  "author": "Igor Kowalczyk",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IgorKowalczyk/ngrok-pm2/issues"
+  },
+  "homepage": "https://github.com/IgorKowalczyk/ngrok-pm2#readme",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "dotenv": "^16.0.0",
+    "ngrok": "^4.3.0",
+    "pm2": "^5.2.0",
+    "prettier": "^2.5.1"
+  }
+}
