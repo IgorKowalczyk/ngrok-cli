@@ -1,11 +1,11 @@
-(async () => {
- require("dotenv").config();
+require("dotenv").config();
  const config = require("./config");
  const ngrok = require("ngrok");
  const chalk = require("chalk");
- console.log(chalk.cyan(chalk.bold("[NGROK] > Starting")));
+ console.log(chalk.cyan.bold("[NGROK] > Starting"));
+(async () => {
  await ngrok.authtoken(config.token);
- console.log(chalk.cyan(chalk.bold("[NGROK] > Connected to ngrok tunnel...")));
+ console.log(chalk.cyan.bold("[NGROK] > Connected to ngrok tunnel..."));
  // TODO: Ask user for ngrok port, addr and region [5s timeout]
  const url = await ngrok.connect({
   proto: config.defaults.protocol,
