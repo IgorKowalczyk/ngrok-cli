@@ -3,7 +3,7 @@
 # Ngrok
 
 > 🔥 Package that allows creating all types of remote connections using ngrok
-> <br><br>[![Discord](https://img.shields.io/discord/666599184844980224?color=333&logo=discord&label=Discord&style=flat-square&logoColor=fff)](https://igorkowalczyk.dev/r/discord-server)
+> <br><br>[![Discord](https://img.shields.io/discord/666599184844980224?color=333&logo=discord&label=Discord&style=flat-square&logoColor=fff)](https://igorkowalczyk.dev/r/discord)
 > [![CodeQL Checks](https://img.shields.io/github/workflow/status/igorkowalczyk/ngrok/CodeQL%20Checks/master?style=flat-square&label=CodeQL&logo=github&color=333)](https://igorkowalczyk.dev)
 > [![GitHub License](https://img.shields.io/github/license/igorkowalczyk/ngrok?style=flat-square&logo=github&label=License&color=333)](https://github.com/igorkowalczyk/ngrok)
 > <br>
