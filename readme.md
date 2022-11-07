@@ -3,14 +3,12 @@
 # Ngrok
 
 > 🔥 Package that allows creating all types of remote connections using ngrok
-> <br><br>[![Discord](https://img.shields.io/discord/666599184844980224?color=333&logo=discord&label=Discord&style=flat-square&logoColor=fff)](https://igorkowalczyk.dev/r/discord)
-> [![CodeQL Checks](https://img.shields.io/github/workflow/status/igorkowalczyk/ngrok/CodeQL%20Checks/master?style=flat-square&label=CodeQL&logo=github&color=333)](https://igorkowalczyk.dev)
-> [![GitHub License](https://img.shields.io/github/license/igorkowalczyk/ngrok?style=flat-square&logo=github&label=License&color=333)](https://github.com/igorkowalczyk/ngrok)
-> <br>
+> <br><br>[![Discord](https://img.shields.io/discord/666599184844980224?color=333&logo=discord&label=Discord&style=flat-square&logoColor=fff)](https://igorkowalczyk.dev/r/discord) > [![CodeQL Checks](https://img.shields.io/github/workflow/status/igorkowalczyk/ngrok/CodeQL%20Checks/master?style=flat-square&label=CodeQL&logo=github&color=333)](https://igorkowalczyk.dev) > [![GitHub License](https://img.shields.io/github/license/igorkowalczyk/ngrok?style=flat-square&logo=github&label=License&color=333)](https://github.com/igorkowalczyk/ngrok) > <br>
 
 ---
 
 ## ✨ Features
+
 - ⚙️ Fully customizable
 - 🌆 Auto-generated ssh command
 - 📚 pm2.io dashboard integration
@@ -22,9 +20,11 @@
 3. Fill `.env` file with Ngrok token
 4. Change `config.js` default values
 5. Run`pm2 start pm2.config.js`
+
 - You can also use https://pm2.io to view the address remotely
 
 ## 🖼️ Screenshots
+
 ![pm2.io dash](https://media.discordapp.net/attachments/922505955885867011/945629828164517888/unknown.png?width=1440&height=270)
 ![pm2.io reload](https://media.discordapp.net/attachments/922505955885867011/945630048587743252/unknown.png)
 

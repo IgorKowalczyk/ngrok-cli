@@ -1,8 +1,8 @@
 require("dotenv").config();
- const config = require("./config");
- const ngrok = require("ngrok");
- const chalk = require("chalk");
- console.log(chalk.cyan.bold("[NGROK] > Starting"));
+const config = require("./config");
+const ngrok = require("ngrok");
+const chalk = require("chalk");
+console.log(chalk.cyan.bold("[NGROK] > Starting"));
 (async () => {
  await ngrok.authtoken(config.token);
  console.log(chalk.cyan.bold("[NGROK] > Connected to ngrok tunnel..."));

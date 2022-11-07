@@ -11,6 +11,6 @@ module.exports = {
     followSymlinks: false,
    },
    args: ["--color"],
-  }
+  },
  ],
 };
