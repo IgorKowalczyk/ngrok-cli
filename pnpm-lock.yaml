@@ -1,14 +1,14 @@
 lockfileVersion: 5.4
 
 specifiers:
-  chalk: ^4.1.2
+  chalk: ^5.0.0
   dotenv: ^16.0.3
   ngrok: ^4.3.3
   pm2: ^5.2.2
   prettier: ^2.8.1
 
 dependencies:
-  chalk: 4.1.2
+  chalk: 5.2.0
   dotenv: 16.0.3
   ngrok: 4.3.3
   pm2: 5.2.2
@@ -324,12 +324,9 @@ packages:
       supports-color: 7.2.0
     dev: false
 
-  /chalk/4.1.2:
-    resolution: {integrity: sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==}
-    engines: {node: '>=10'}
-    dependencies:
-      ansi-styles: 4.3.0
-      supports-color: 7.2.0
+  /chalk/5.2.0:
+    resolution: {integrity: sha512-ree3Gqw/nazQAPuJJEy+avdl7QfZMcUvmHIKgEZkGL+xOBzRvup5Hxo6LHuMceSxOabuJLJm5Yp/92R9eMmMvA==}
+    engines: {node: ^12.17.0 || ^14.13 || >=16.0.0}
     dev: false
 
   /charm/0.1.2:
