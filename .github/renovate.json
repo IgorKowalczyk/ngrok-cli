@@ -4,5 +4,5 @@
  "dependencyDashboard": false,
  "ignorePaths": ["**/node_modules/**"],
  "labels": ["dependencies"],
- "reviewers": ["igorkowalczyk"]
+ "reviewers": ["igorkowalczyk"],
 }
