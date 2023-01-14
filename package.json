@@ -29,7 +29,7 @@
     "dotenv": "16.0.3",
     "ngrok": "4.3.3",
     "pm2": "5.2.2",
-    "prettier": "2.8.2"
+    "prettier": "2.8.3"
   },
   "packageManager": "pnpm@7.25.0"
 }
