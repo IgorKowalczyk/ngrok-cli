@@ -5,14 +5,14 @@ specifiers:
   dotenv: 16.0.3
   ngrok: 4.3.3
   pm2: 5.2.2
-  prettier: 2.8.2
+  prettier: 2.8.3
 
 dependencies:
   chalk: 4.1.2
   dotenv: 16.0.3
   ngrok: 4.3.3
   pm2: 5.2.2
-  prettier: 2.8.2
+  prettier: 2.8.3
 
 packages:
 
@@ -1176,8 +1176,8 @@ packages:
     engines: {node: '>= 0.8.0'}
     dev: false
 
-  /prettier/2.8.2:
-    resolution: {integrity: sha512-BtRV9BcncDyI2tsuS19zzhzoxD8Dh8LiCx7j7tHzrkz8GFXAexeWFdi22mjE1d16dftH2qNaytVxqiRTGlMfpw==}
+  /prettier/2.8.3:
+    resolution: {integrity: sha512-tJ/oJ4amDihPoufT5sM0Z1SKEuKay8LfVAMlbbhnnkvt6BUserZylqo2PN+p9KeljLr0OHa2rXHU1T8reeoTrw==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     dev: false
