@@ -1,6 +1,6 @@
 {
   "name": "@igorkowalczyk/ngrok",
-  "version": "2.0.-",
+  "version": "2.0.1",
   "description": "Script that allows you to create all types of remote connections using Ngrok",
   "main": "index.js",
   "type": "module",
@@ -16,8 +16,12 @@
   },
   "keywords": [
     "ngrok",
-    "pm2",
-    "web"
+    "remote",
+    "connection",
+    "tunnel",
+    "ssh",
+    "tcp",
+    "http"
   ],
   "author": "Igor Kowalczyk",
   "license": "MIT",
@@ -32,8 +36,7 @@
     "ngrok": "4.3.3",
     "ora": "^6.1.2",
     "pm2": "5.2.2",
-    "prettier": "2.8.3",
-    "prompts": "^2.4.2"
+    "prettier": "2.8.3"
   },
   "packageManager": "pnpm@7.25.1",
   "devDependencies": {
