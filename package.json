@@ -1,17 +1,18 @@
 {
-  "name": "ngrok-pm2",
-  "version": "1.0.1",
-  "description": "Package that allows creating remote connections using ngrok",
+  "name": "@igorkowalczyk/ngrok",
+  "version": "2.0.-",
+  "description": "Script that allows you to create all types of remote connections using Ngrok",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "node index.js",
     "format": "prettier --write . --ignore-unknown",
     "format:check": "prettier --check .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint . --ext .js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/IgorKowalczyk/ngrok-pm2.git"
+    "url": "git+https://github.com/IgorKowalczyk/ngrok.git"
   },
   "keywords": [
     "ngrok",
@@ -21,15 +22,22 @@
   "author": "Igor Kowalczyk",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/IgorKowalczyk/ngrok-pm2/issues"
+    "url": "https://github.com/IgorKowalczyk/ngrok/issues"
   },
-  "homepage": "https://github.com/IgorKowalczyk/ngrok-pm2#readme",
+  "homepage": "https://github.com/IgorKowalczyk/ngrok#readme",
   "dependencies": {
-    "chalk": "4.1.2",
+    "chalk": "5.2.0",
     "dotenv": "16.0.3",
+    "inquirer": "^9.1.4",
     "ngrok": "4.3.3",
+    "ora": "^6.1.2",
     "pm2": "5.2.2",
-    "prettier": "2.8.3"
+    "prettier": "2.8.3",
+    "prompts": "^2.4.2"
   },
-  "packageManager": "pnpm@7.25.1"
+  "packageManager": "pnpm@7.25.1",
+  "devDependencies": {
+    "eslint": "^8.32.0",
+    "eslint-config-prettier": "^8.6.0"
+  }
 }

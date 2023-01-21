@@ -1,36 +1,34 @@
-<img width="170" height="170" align="left" style="float: left; margin: 0 10px 0 0; border-radius: 50%;" alt="Ngrok" src="https://user-images.githubusercontent.com/49127376/209564847-221c4b3f-3b6f-4a21-9653-2f1da51549eb.png">
+<picture width="170" height="170" align="left" style="float: left; margin: 0 10px 0 0; border-radius: 50%;" alt="Ngrok">
+<source media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/49127376/213876190-46c8788f-6827-425c-a152-0aee378e5e35.svg" width="170" height="170" align="left" style="float: left; margin: 0 10px 0 0; border-radius: 50%;">
+<img src="https://user-images.githubusercontent.com/49127376/213876191-a37fbd87-760f-498e-b8fc-a468e9cae5f3.svg" height="128" width="170" height="170" align="left" style="float: left; margin: 0 10px 0 0; border-radius: 50%;">
+</picture>
 
-# Ngrok
+# Ngrok Javascript CLI
 
-> 🔥 Package that allows creating all types of remote connections using ngrok
-> <br><br>[![Discord](https://img.shields.io/discord/666599184844980224?color=1B47FF&logo=discord&label=Discord&style=flat-square&logoColor=fff)](https://igorkowalczyk.dev/r/discord) [![CodeQL Checks](https://img.shields.io/github/actions/workflow/status/igorkowalczyk/ngrok/codeql-analysis.yml?branch=main&style=flat-square&label=CodeQL&logo=github&color=1B47FF)](https://igorkowalczyk.dev) [![GitHub License](https://img.shields.io/github/license/igorkowalczyk/ngrok?style=flat-square&logo=github&label=License&color=1B47FF)](https://github.com/igorkowalczyk/ngrok) <br>
+> 🔌 Script that allows you to create all types of remote connections using Ngrok
+> <br><br>[![Discord](https://img.shields.io/discord/666599184844980224?color=1852da&logo=discord&label=Discord&style=flat-square&logoColor=fff)](https://igorkowalczyk.dev/r/discord) [![CodeQL Checks](https://img.shields.io/github/actions/workflow/status/igorkowalczyk/ngrok/codeql-analysis.yml?branch=main&style=flat-square&label=CodeQL&logo=github&color=1852da)](https://igorkowalczyk.dev) [![GitHub License](https://img.shields.io/github/license/igorkowalczyk/ngrok?style=flat-square&logo=github&label=License&color=1852da)](https://github.com/igorkowalczyk/ngrok) <br>
 
 ---
 
 ## ✨ Features
 
-- ⚙️ Fully customizable
-- 🌆 Auto-generated ssh command
-- 📚 pm2.io dashboard integration
+- 🚀 Easy usage with select menu (no need to remember commands)
+- 🌆 Auto-generated SSH command for easy access
+- 🔩 Support for all types (`HTTP`, `HTTPS`, `TCP`, `TLS`)
+- 🌎 Support for all regions (`US`, `EU`, `AU`, `ASIA`, `SA`, `JP`, `IN`)
 
 ## 🗜️ Usage
 
 1. Clone this repository: `git clone https://github.com/IgorKowalczyk/ngrok.git`
-2. Run npm i to install all dependencies,
-3. Fill `.env` file with Ngrok token
-4. Change `config.js` default values
-5. Run`pm2 start pm2.config.js`
+2. Run `pnpm i` to install all dependencies,
+3. Fill `.env` file with Ngrok token (you can get it [here](https://dashboard.ngrok.com/get-started/setup)) [`NGROK_TOKEN]
+4. Change `config.js` default values [optional]
+5. Run `pnpm start` to start the script and follow the instructions
 
-- You can also use https://pm2.io to view the address remotely
+## 📹 Screenshots
 
-## 🖼️ Screenshots
-
-![pm2.io dash](https://media.discordapp.net/attachments/922505955885867011/945629828164517888/unknown.png?width=1440&height=270)
-![pm2.io reload](https://media.discordapp.net/attachments/922505955885867011/945630048587743252/unknown.png)
-
-## 🧱 Todo
-
-- Ask user for ngrok port, address and region [5s timeout]
+![image](https://user-images.githubusercontent.com/49127376/213877230-f1f7eca6-ebd6-4862-862c-f2dff2fae5ff.png)
+![image](https://user-images.githubusercontent.com/49127376/213877252-c4cc45af-4e99-404d-bdfe-c1087d10d70d.png)
 
 ## ⁉️ Issues
 
