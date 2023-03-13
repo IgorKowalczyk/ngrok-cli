@@ -1,6 +1,6 @@
 {
   "name": "@igorkowalczyk/ngrok",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Script that allows you to create all types of remote connections using Ngrok",
   "main": "index.js",
   "type": "module",
@@ -8,7 +8,8 @@
     "start": "node index.js",
     "format": "prettier --write . --ignore-unknown --cache",
     "format:check": "prettier --check --cache .",
-    "lint": "eslint . --ext .js"
+    "lint": "eslint . --ext .js",
+    "lint:fix": "eslint . --ext .js --fix"
   },
   "repository": {
     "type": "git",
@@ -32,15 +33,17 @@
   "dependencies": {
     "chalk": "5.2.0",
     "dotenv": "16.0.3",
-    "inquirer": "^9.1.4",
+    "inquirer": "9.1.4",
     "ngrok": "4.3.3",
-    "ora": "^6.1.2",
+    "ora": "6.1.2",
     "pm2": "5.2.2",
     "prettier": "2.8.4"
   },
-  "packageManager": "pnpm@7.29.1",
   "devDependencies": {
-    "eslint": "^8.32.0",
-    "eslint-config-prettier": "^8.6.0"
-  }
+    "@igorkowalczyk/eslint-config": "1.0.3",
+    "@igorkowalczyk/prettier-config": "1.0.3",
+    "eslint": "8.32.0",
+    "eslint-config-prettier": "8.6.0"
+  },
+  "packageManager": "pnpm@7.29.1"
 }

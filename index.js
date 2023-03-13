@@ -1,9 +1,9 @@
 import "dotenv/config";
-import { config } from "./config.js";
-import ngrok from "ngrok";
 import chalk from "chalk";
 import inquirer from "inquirer";
+import ngrok from "ngrok";
 import ora from "ora";
+import { config } from "./config.js";
 const spinner = ora(chalk.bold("Connecting...")).start();
 
 await ngrok
