@@ -8,7 +8,7 @@ specifiers:
   eslint: 8.36.0
   inquirer: 9.1.5
   ngrok: 4.3.3
-  ora: 6.2.0
+  ora: 6.3.0
   pm2: 5.3.0
   prettier: 2.8.6
 
@@ -17,7 +17,7 @@ dependencies:
   dotenv: 16.0.3
   inquirer: 9.1.5
   ngrok: 4.3.3
-  ora: 6.2.0
+  ora: 6.3.0
   pm2: 5.3.0
   prettier: 2.8.6
 
@@ -1520,7 +1520,7 @@ packages:
       figures: 5.0.0
       lodash: 4.17.21
       mute-stream: 1.0.0
-      ora: 6.2.0
+      ora: 6.3.0
       run-async: 2.4.1
       rxjs: 7.8.0
       string-width: 5.1.2
@@ -1984,8 +1984,8 @@ packages:
       word-wrap: 1.2.3
     dev: true
 
-  /ora/6.2.0:
-    resolution: {integrity: sha512-c1qb/1rdE+EFDYiLXh10VY459uMh7DN9zlgd8mZJLoeiPpYllN8eAOiih2Rkah5ywxRm5tHN5C9zPheDq8d1MA==}
+  /ora/6.3.0:
+    resolution: {integrity: sha512-1/D8uRFY0ay2kgBpmAwmSA404w4OoPVhHMqRqtjvrcK/dnzcEZxMJ+V4DUbyICu8IIVRclHcOf5wlD1tMY4GUQ==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     dependencies:
       chalk: 5.2.0
