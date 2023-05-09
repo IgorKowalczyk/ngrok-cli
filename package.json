@@ -44,5 +44,5 @@
     "@igorkowalczyk/prettier-config": "1.3.2",
     "eslint": "8.40.0"
   },
-  "packageManager": "pnpm@8.4.0"
+  "packageManager": "pnpm@8.5.0"
 }
