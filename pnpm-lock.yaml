@@ -8,8 +8,8 @@ dependencies:
     specifier: 16.0.3
     version: 16.0.3
   inquirer:
-    specifier: 9.2.3
-    version: 9.2.3
+    specifier: 9.2.4
+    version: 9.2.4
   ngrok:
     specifier: 4.3.3
     version: 4.3.3
@@ -1527,8 +1527,8 @@ packages:
     resolution: {integrity: sha512-JV/yugV2uzW5iMRSiZAyDtQd+nxtUnjeLt0acNdw98kKLrvuRVyB80tsREOE7yvGVgalhZ6RNXCmEHkUKBKxew==}
     dev: false
 
-  /inquirer@9.2.3:
-    resolution: {integrity: sha512-/Et0+d28D7hnTYaqeCQkp3FYuD/X5cc2qbM6BzFdC5zs30oByoU5W/pmLc493FVVMwYmAILKjPBEmwRKTtknSQ==}
+  /inquirer@9.2.4:
+    resolution: {integrity: sha512-Q2KnguYUxC/GqkAWJBTWpXH1E3Qqh5VZaCqxK5HYYnQmaePKGLgscVfb3L3/32oF6NRW5VpGqUr75uDjtHHqRw==}
     engines: {node: '>=14.18.0'}
     dependencies:
       ansi-escapes: 4.3.2
