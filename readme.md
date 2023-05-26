@@ -12,7 +12,7 @@
 
 ## ✨ Features
 
-- 🚀 Easy usage with select menu (no need to remember commands)
+- 🚀 Easy usage with select menus and dynamic text inputs
 - 🌆 Auto-generated SSH command for easy access
 - 🔩 Support for all types (`HTTP`, `HTTPS`, `TCP`, `TLS`)
 - 🌎 Support for all regions (`US`, `EU`, `AU`, `ASIA`, `SA`, `JP`, `IN`)
