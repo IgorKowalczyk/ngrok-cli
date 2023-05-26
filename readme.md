@@ -25,10 +25,8 @@
 4. Change `config.js` default values (optional)
 5. Run `pnpm start` to start the script and follow the instructions
 
-## 📹 Screenshots
-
-![image](https://user-images.githubusercontent.com/49127376/213877230-f1f7eca6-ebd6-4862-862c-f2dff2fae5ff.png)
-![image](https://user-images.githubusercontent.com/49127376/213877252-c4cc45af-4e99-404d-bdfe-c1087d10d70d.png)
+## 📹 Example
+https://github.com/IgorKowalczyk/ngrok/assets/49127376/3881c239-ea30-48e7-93d5-b79847088b8b
 
 ## ⁉️ Issues
 
