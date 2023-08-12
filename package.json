@@ -40,7 +40,7 @@
     "prettier": "3.0.1"
   },
   "devDependencies": {
-    "@igorkowalczyk/eslint-config": "1.5.4",
+    "@igorkowalczyk/eslint-config": "1.5.5",
     "@igorkowalczyk/prettier-config": "1.5.4",
     "eslint": "8.47.0"
   },
