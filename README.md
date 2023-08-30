@@ -48,3 +48,7 @@ When submitting a pull request:
 ## 📋 License
 
 This project is licensed under the MIT. See the [LICENSE](https://github.com/igorkowalczyk/ngrok/blob/master/license.md) file for details
+
+---
+
+<sub>This script is an independent project and is not affiliated, endorsed, or associated with <a href="https://ngrok.com">Ngrok</a> in any way.</sub>
