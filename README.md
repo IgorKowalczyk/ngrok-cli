@@ -1,8 +1,8 @@
 ![Ngrok CLI](https://github.com/IgorKowalczyk/ngrok/assets/49127376/bb76f0fd-82e4-4191-82a7-3e9116bd06e0)
 
 <div align="center">
-  <a aria-label="Discord" href="https://igorkowalczyk.dev/r/discord">
-    <img src="https://img.shields.io/discord/666599184844980224?color=1852da&logo=discord&label=Discord&style=flat-square&logoColor=fff">
+  <a aria-label="Discord" href="https://igorkowalczyk.dev/discord">
+    <img src="https://img.shields.io/discord/695282860399001640?color=1852da&logo=discord&label=Discord&style=flat-square&logoColor=fff">
   </a>
   <a aria-label="CodeQL Checks" href="https://igorkowalczyk.dev">
     <img src="https://img.shields.io/github/actions/workflow/status/igorkowalczyk/ngrok/codeql-analysis.yml?branch=main&style=flat-square&label=CodeQL&logo=github&color=1852da">
