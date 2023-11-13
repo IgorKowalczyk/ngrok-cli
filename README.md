@@ -18,16 +18,20 @@
 
 - 🚀 Easy usage with select menus and dynamic text inputs
 - 🌆 Auto-generated SSH command for easy access
-- 🔩 Support for all types (`HTTP`, `HTTPS`, `TCP`, `TLS`)
+- 📝 Support for all protocols (`HTTP`, `HTTPS`, `TCP`, `TLS`)
 - 🌎 Support for all regions (`US`, `EU`, `AU`, `ASIA`, `SA`, `JP`, `IN`)
 
 ## 🗜️ Usage
 
-1. Clone this repository: `git clone https://github.com/IgorKowalczyk/ngrok.git`
-2. Run `pnpm i` to install all dependencies,
-3. Fill `.env` file with Ngrok token (you can get it [here](https://dashboard.ngrok.com/get-started/setup)) (`NGROK_TOKEN`)
-4. Change `config.js` default values (optional)
-5. Run `pnpm start` to start the script and follow the instructions
+1. Clone this repository: `git clone https://github.com/IgorKowalczyk/ngrok.git` and `cd` into it
+2. Run `pnpm i` to install all dependencies
+3. Copy `.env.example` to `.env` file
+4. Fill `.env` file with Ngrok token (you can get it [here](https://dashboard.ngrok.com/get-started/setup)) (`NGROK_TOKEN`)
+5. Change `config.js` default values (optional)
+6. Run `pnpm start` to start the script and follow the instructions
+
+> [!NOTE]
+> You can also use `npm` or `yarn` instead of `pnpm`
 
 ## 📹 Example
 

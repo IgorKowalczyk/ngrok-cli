@@ -47,6 +47,7 @@ const region = await inquirer.prompt([
 
 const connecting = ora(chalk.bold("Connecting...")).start();
 const int = ora(chalk.bold("Waiting for interface..."));
+
 await ngrok
  .connect({
   proto: response.protocol.toLowerCase(),
