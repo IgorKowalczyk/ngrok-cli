@@ -1,6 +1,6 @@
 {
   "name": "@igorkowalczyk/ngrok",
-  "version": "2.0.2",
+  "version": "2.1.0",
   "description": "Script that allows you to create all types of remote connections using Ngrok",
   "exports": null,
   "type": "module",
@@ -43,6 +43,9 @@
     "@igorkowalczyk/eslint-config": "2.2.0",
     "@igorkowalczyk/prettier-config": "2.2.0",
     "eslint": "8.56.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   },
   "packageManager": "pnpm@8.12.1"
 }
