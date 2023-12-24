@@ -4,19 +4,8 @@ import inquirer from "inquirer";
 import ngrok from "ngrok";
 import ora from "ora";
 import { config } from "./config.js";
-const spinner = ora(chalk.bold("Connecting...")).start();
 
 try {
- await ngrok
-  .authtoken(config.token)
-  .then(() => {
-   spinner.succeed(chalk.bold("Connected to ngrok!"));
-  })
-  .catch((err) => {
-   spinner.fail(chalk.bold("Failed to connect to ngrok!"));
-   console.error(err);
-  });
-
  const response = await inquirer.prompt([
   {
    type: "list",
