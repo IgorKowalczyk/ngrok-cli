@@ -1,5 +1,5 @@
 {
-  "name": "@igorkowalczyk/ngrok",
+  "name": "@igorkowalczyk/ngrok-cli",
   "version": "2.1.0",
   "description": "Script that allows you to create all types of remote connections using Ngrok",
   "exports": null,
