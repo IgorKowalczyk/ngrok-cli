@@ -1,6 +1,6 @@
 {
   "name": "@igorkowalczyk/ngrok-cli",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Script that allows you to create all types of remote connections using Ngrok",
   "exports": null,
   "type": "module",
