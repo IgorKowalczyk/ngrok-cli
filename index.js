@@ -1,69 +1,56 @@
 import "dotenv/config";
+import { select, number, confirm } from "@inquirer/prompts";
 import chalk from "chalk";
-import inquirer from "inquirer";
 import ngrok from "ngrok";
 import ora from "ora";
 import { config } from "./config.js";
 
 try {
- const response = await inquirer.prompt([
-  {
-   type: "list",
-   name: "protocol",
-   message: "Select a protocol:",
-   choices: config.allProtocols.map((protocol) => protocol.toUpperCase()),
-   default: "tcp",
-  },
- ]);
+ const protocolAnswer = await select({
+  message: "Select a protocol:",
+  choices: config.allProtocols.map((protocol) => {
+   return { name: protocol.toUpperCase(), value: protocol };
+  }),
+  default: "tcp",
+ });
 
- const port = await inquirer.prompt([
-  {
-   type: "input",
-   name: "port",
-   message: `Select a port for the tunnel (protocol: ${response.protocol}):`,
-   default: config.ports.find((port) => port[0] == response.protocol.toLowerCase())[1],
-  },
- ]);
+ const portAnswer = await number({
+  name: "port",
+  message: `Select a port for the tunnel (protocol: ${protocolAnswer.toUpperCase()}):`,
+  default: config.ports.find((port) => port[0] == protocolAnswer)[1],
+ });
 
- const region = await inquirer.prompt([
-  {
-   type: "list",
-   name: "region",
-   message: "Select a region:",
-   choices: ["us", "eu", "ap", "au", "sa", "jp", "in"],
-   default: "eu",
-  },
- ]);
+ const regionAnswer = await select({
+  message: "Select a region:",
+  choices: ["us", "eu", "ap", "au", "sa", "jp", "in"],
+  default: "eu",
+ });
 
  const connecting = ora(chalk.bold("Connecting...")).start();
  const int = ora(chalk.bold("Waiting for interface..."));
 
  const url = await ngrok.connect({
-  proto: response.protocol.toLowerCase(),
-  addr: port.port,
-  region: region.region,
+  proto: protocolAnswer,
+  addr: portAnswer,
+  region: regionAnswer,
   authtoken: config.token,
   onStatusChange: (status) => {
-   status == "connected" ? connecting.succeed(chalk.bold(`Connected to ${chalk.cyan(response.protocol)} tunnel using port ${chalk.cyan(port.port)} in ${chalk.cyan(region.region)}`)) : connecting.fail(chalk.bold("Failed to connect!"));
+   status == "connected" ? connecting.succeed(chalk.bold(`Connected to ${chalk.cyan(protocolAnswer)} tunnel using port ${chalk.cyan(portAnswer)} in ${chalk.cyan(regionAnswer)}`)) : connecting.fail(chalk.bold("Failed to connect!"));
    int.start();
   },
  });
 
  if (!url) int.fail(chalk.bold("Failed to connect! Please try again!"));
 
- if (response.protocol == "HTTP") int.succeed(chalk.bold("Web interface: " + chalk.cyan(`${url}`)));
- if (response.protocol == "TLS") int.succeed(chalk.bold("Web interface: " + chalk.cyan(`${url}`)));
- if (response.protocol == "TCP") {
+ if (protocolAnswer == "http") int.succeed(chalk.bold("Web interface: " + chalk.cyan(`${url}`)));
+ if (protocolAnswer == "tls") int.succeed(chalk.bold("Web interface: " + chalk.cyan(`${url}`)));
+ if (protocolAnswer == "tcp") {
   int.succeed(chalk.bold("TCP interface: " + chalk.cyan(`${url}`)));
-  const generate = await inquirer.prompt([
-   {
-    type: "confirm",
-    name: "generate",
-    message: "Generate a SSH connection string?",
-    default: true,
-   },
-  ]);
-  if (generate.generate) console.log(chalk.green("✔ ") + chalk.bold("SSH connection string:"), `ssh -p ${url.split(":")[2]} USERNAME@${url.split(":")[1].toString().replace("//", "")}`);
+  const generateAnswer = await confirm({
+   message: "Generate a SSH connection string?",
+   default: true,
+  });
+  if (generateAnswer) console.log(chalk.green("✔ ") + chalk.bold("SSH connection string:"), `ssh -p ${url.split(":")[2]} USERNAME@${url.split(":")[1].toString().replace("//", "")}`);
  }
 } catch (err) {
  console.error(err);
