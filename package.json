@@ -1,11 +1,11 @@
 {
   "name": "@igorkowalczyk/ngrok-cli",
-  "version": "2.1.1",
+  "version": "2.2.0",
   "description": "Script that allows you to create all types of remote connections using Ngrok",
   "exports": null,
   "type": "module",
   "scripts": {
-    "start": "node index.js",
+    "start": "tsx index.ts",
     "format": "prettier . --write --ignore-unknown --cache",
     "format:check": "prettier . --check --cache",
     "lint": "eslint .",
@@ -41,9 +41,13 @@
   "devDependencies": {
     "@igorkowalczyk/eslint-config": "2.2.0",
     "@igorkowalczyk/prettier-config": "2.2.0",
-    "eslint": "9.9.0"
+    "@types/node": "22.4.0",
+    "eslint": "9.9.0",
+    "tsx": "4.17.0",
+    "typescript": "5.5.4"
   },
   "engines": {
     "node": ">=18.0.0"
-  }
+  },
+  "packageManager": "pnpm@9.7.1"
 }

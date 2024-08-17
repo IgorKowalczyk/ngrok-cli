@@ -1,35 +1,42 @@
 import "dotenv/config";
 import { select, number, confirm } from "@inquirer/prompts";
 import chalk from "chalk";
-import ngrok from "ngrok";
+import { connect, type Ngrok } from "ngrok";
 import ora from "ora";
-import { config } from "./config.js";
+import { config } from "./config";
 
 try {
- const protocolAnswer = await select({
+ const protocolAnswer = (await select({
   message: "Select a protocol:",
   choices: config.allProtocols.map((protocol) => {
    return { name: protocol.toUpperCase(), value: protocol };
   }),
   default: "tcp",
- });
+ })) as Ngrok.Protocol;
 
  const portAnswer = await number({
-  name: "port",
   message: `Select a port for the tunnel (protocol: ${protocolAnswer.toUpperCase()}):`,
-  default: config.ports.find((port) => port[0] == protocolAnswer)[1],
+  default: parseInt(config.ports.find((port) => port[0] == protocolAnswer)?.[1] || "0"),
  });
 
- const regionAnswer = await select({
+ const regionAnswer = (await select({
   message: "Select a region:",
-  choices: ["us", "eu", "ap", "au", "sa", "jp", "in"],
+  choices: [
+   { name: "us", value: "us" },
+   { name: "eu", value: "eu" },
+   { name: "ap", value: "ap" },
+   { name: "au", value: "au" },
+   { name: "sa", value: "sa" },
+   { name: "jp", value: "jp" },
+   { name: "in", value: "in" },
+  ],
   default: "eu",
- });
+ })) as Ngrok.Region;
 
  const connecting = ora(chalk.bold("Connecting...")).start();
  const int = ora(chalk.bold("Waiting for interface..."));
 
- const url = await ngrok.connect({
+ const url = await connect({
   proto: protocolAnswer,
   addr: portAnswer,
   region: regionAnswer,
