@@ -23,11 +23,11 @@
 
 ## 🗜️ Usage
 
-1. Clone this repository: `git clone https://github.com/IgorKowalczyk/ngrok.git` and `cd` into it
+1. Clone [this repository](https://github.com/igorkowalczyk/ngrok-cli) `git clone https://github.com/IgorKowalczyk/ngrok.git` and `cd` into the directory
 2. Run `pnpm i` to install all dependencies
 3. Copy `.env.example` to `.env` file
 4. Fill `.env` file with Ngrok token (you can get it [here](https://dashboard.ngrok.com/get-started/setup)) (`NGROK_TOKEN`)
-5. Change `config.js` default values (optional)
+5. Change `config.ts` default values (optional). You can change the default region, protocol, and ports.
 6. Run `pnpm start` to start the script and follow the instructions
 
 > [!NOTE]
