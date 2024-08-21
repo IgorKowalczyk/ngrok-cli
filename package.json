@@ -41,7 +41,7 @@
   "devDependencies": {
     "@igorkowalczyk/eslint-config": "2.2.0",
     "@igorkowalczyk/prettier-config": "2.2.0",
-    "@types/node": "22.4.2",
+    "@types/node": "22.5.0",
     "eslint": "9.9.0",
     "tsx": "4.17.0",
     "typescript": "5.5.4"
