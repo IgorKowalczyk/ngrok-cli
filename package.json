@@ -36,7 +36,7 @@
     "dotenv": "16.4.5",
     "ngrok": "5.0.0-beta.2",
     "ora": "8.1.1",
-    "prettier": "3.4.0"
+    "prettier": "3.4.1"
   },
   "devDependencies": {
     "@igorkowalczyk/eslint-config": "2.2.0",
