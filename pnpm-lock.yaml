@@ -15,8 +15,8 @@ importers:
         specifier: 5.3.0
         version: 5.3.0
       dotenv:
-        specifier: 16.4.6
-        version: 16.4.6
+        specifier: 16.4.7
+        version: 16.4.7
       ngrok:
         specifier: 5.0.0-beta.2
         version: 5.0.0-beta.2
@@ -587,8 +587,8 @@ packages:
     resolution: {integrity: sha512-35mSku4ZXK0vfCuHEDAwt55dg2jNajHZ1odvF+8SSr82EsZY4QmXfuWso8oEd8zRhVObSN18aM0CjSdoBX7zIw==}
     engines: {node: '>=0.10.0'}
 
-  dotenv@16.4.6:
-    resolution: {integrity: sha512-JhcR/+KIjkkjiU8yEpaB/USlzVi3i5whwOjpIRNGi9svKEXZSe+Qp6IWAjFjv+2GViAoDRCUv/QLNziQxsLqDg==}
+  dotenv@16.4.7:
+    resolution: {integrity: sha512-47qPchRCykZC03FhkYAhrvwU4xDBFIj1QPqaarj6mdM/hgUzfPHcpkHJOn3mJAufFeeAxAzeGsr5X0M4k6fLZQ==}
     engines: {node: '>=12'}
 
   emoji-regex@10.3.0:
@@ -2009,7 +2009,7 @@ snapshots:
     dependencies:
       esutils: 2.0.3
 
-  dotenv@16.4.6: {}
+  dotenv@16.4.7: {}
 
   emoji-regex@10.3.0: {}
 
