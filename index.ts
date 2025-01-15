@@ -3,7 +3,7 @@ import { select, number, confirm } from "@inquirer/prompts";
 import chalk from "chalk";
 import { connect, type Ngrok } from "ngrok";
 import ora from "ora";
-import { config } from "./config";
+import { config } from "@/config";
 
 try {
  const protocolAnswer = (await select({
@@ -42,7 +42,11 @@ try {
   region: regionAnswer,
   authtoken: config.token,
   onStatusChange: (status) => {
-   status == "connected" ? connecting.succeed(chalk.bold(`Connected to ${chalk.cyan(protocolAnswer)} tunnel using port ${chalk.cyan(portAnswer)} in ${chalk.cyan(regionAnswer)}`)) : connecting.fail(chalk.bold("Failed to connect!"));
+   if (status == "connected") {
+    connecting.succeed(chalk.bold(`Connected to ${chalk.cyan(protocolAnswer)} tunnel using port ${chalk.cyan(portAnswer)} in ${chalk.cyan(regionAnswer)}`));
+   } else if (status == "closed") {
+    connecting.fail(chalk.bold("Failed to connect!"));
+   }
    int.start();
   },
  });
@@ -61,5 +65,9 @@ try {
  }
 } catch (err) {
  console.error(err);
- process.exit(1);
+ if (err instanceof Error) {
+  throw new Error(err.message);
+ } else {
+  throw new Error(String(err));
+ }
 }
