@@ -61,7 +61,9 @@ try {
    message: "Generate a SSH connection string?",
    default: true,
   });
-  if (generateAnswer) console.log(chalk.green("✔ ") + chalk.bold("SSH connection string:"), `ssh -p ${url.split(":")[2]} USERNAME@${url.split(":")[1].toString().replace("//", "")}`);
+  if (generateAnswer) {
+   console.log(chalk.green("✔ ") + chalk.bold("SSH connection string:"), `ssh -p ${url.split(":")[2]} USERNAME@${url.split(":")[1].toString().replace("//", "")}`);
+  }
  }
 } catch (err) {
  console.error(err);

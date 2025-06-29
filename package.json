@@ -33,16 +33,16 @@
   "dependencies": {
     "@inquirer/prompts": "7.5.3",
     "chalk": "5.4.1",
-    "dotenv": "16.5.0",
+    "dotenv": "17.0.0",
     "ngrok": "5.0.0-beta.2",
     "ora": "8.2.0",
     "prettier": "3.6.2"
   },
   "devDependencies": {
-    "@igorkowalczyk/eslint-config": "3.0.8",
-    "@igorkowalczyk/prettier-config": "3.0.8",
-    "@types/node": "22.15.33",
-    "eslint": "9.29.0",
+    "@igorkowalczyk/eslint-config": "3.1.0",
+    "@igorkowalczyk/prettier-config": "3.1.0",
+    "@types/node": "24.0.7",
+    "eslint": "9.30.0",
     "tsx": "4.20.3",
     "typescript": "5.8.3"
   },
