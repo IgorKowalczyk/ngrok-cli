@@ -31,8 +31,8 @@ importers:
         specifier: 3.1.0
         version: 3.1.0(@types/eslint@9.6.1)(@typescript-eslint/utils@8.35.0(eslint@9.35.0(jiti@2.4.2))(typescript@5.9.2))(eslint-import-resolver-node@0.3.9)(eslint@9.35.0(jiti@2.4.2))(prettier@3.6.2)(ts-api-utils@2.1.0(typescript@5.9.2))(typescript@5.9.2)
       '@igorkowalczyk/prettier-config':
-        specifier: 3.1.0
-        version: 3.1.0(prettier@3.6.2)
+        specifier: 3.2.1
+        version: 3.2.1(prettier@3.6.2)
       '@types/node':
         specifier: 24.3.1
         version: 24.3.1
@@ -326,8 +326,8 @@ packages:
     peerDependencies:
       eslint: ^9
 
-  '@igorkowalczyk/prettier-config@3.1.0':
-    resolution: {integrity: sha512-nhD66AFONmEGzZK++CAzRchMF/TXIx26+DnkfbbQSSHZU/BfKJV47pkqYVRs1youwC58U7s+t55beJvvU46UEA==}
+  '@igorkowalczyk/prettier-config@3.2.1':
+    resolution: {integrity: sha512-9hntLRd2pKCVgTAI3VoTWAJk9lXWqZsCev0aSqCB+fkjK9ciPx+2c74XcsnHSZ7nMbln7qJpPr5/Mvg5mGozHg==}
     peerDependencies:
       prettier: ^3
 
@@ -1988,6 +1988,7 @@ packages:
 
   uuid@8.3.2:
     resolution: {integrity: sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==}
+    deprecated: uuid@10 and below is no longer supported.  For ESM codebases, update to uuid@latest.  For CommonJS codebases, use uuid@11 (but be aware this version will likely be deprecated in 2028).
     hasBin: true
 
   which-boxed-primitive@1.1.1:
@@ -2325,7 +2326,7 @@ snapshots:
       - ts-api-utils
       - typescript
 
-  '@igorkowalczyk/prettier-config@3.1.0(prettier@3.6.2)':
+  '@igorkowalczyk/prettier-config@3.2.1(prettier@3.6.2)':
     dependencies:
       prettier: 3.6.2
 
