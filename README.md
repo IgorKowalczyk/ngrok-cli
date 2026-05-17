@@ -14,6 +14,14 @@
 
 ---
 
+
+# 🚫 Repository Deprecated
+
+> [!CAUTION]
+> This repository is deprecated and no longer maintained. No further updates, bug fixes, or support will be provided.
+
+---
+
 ## ✨ Features
 
 - 🚀 Easy usage with select menus and dynamic text inputs
